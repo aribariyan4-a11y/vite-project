@@ -6,7 +6,6 @@ const Banner = () => {
         <div className="bg-gray-50 px-8 py-16">
             <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
 
-                {/* Left Content */}
                 <div className="max-w-xl">
 
                     <p className="bg-blue-100 text-purple-600 inline-block px-4 py-1 rounded-full text-sm mb-4">
@@ -38,7 +37,6 @@ const Banner = () => {
 
                 </div>
 
-                {/* Right Image */}
                 <div>
                     <img
                         src={bannerImg}

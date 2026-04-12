@@ -1,0 +1,69 @@
+
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes using AI tools.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "success",
+    "features": ["ATS optimization", "Export PDF", "100+ templates"],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "Social Media Scheduler",
+    "description": "Plan and automate your social posts.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "warning",
+    "features": ["Auto posting", "Analytics", "Multi-platform"],
+    "icon": "📅"
+  },
+  {
+    "id": 3,
+    "name": "Canva Pro Toolkit",
+    "description": "Design like a pro with premium assets.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "info",
+    "features": ["Premium templates", "Stock images", "Brand kit"],
+    "icon": "🎨"
+  },
+  {
+    "id": 4,
+    "name": "SEO Analyzer",
+    "description": "Improve website ranking with SEO insights.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "success",
+    "features": ["Keyword analysis", "Site audit", "Backlink tracking"],
+    "icon": "📊"
+  },
+  {
+    "id": 5,
+    "name": "Email Marketing Tool",
+    "description": "Create and send bulk emails easily.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "warning",
+    "features": ["Email templates", "Automation", "Analytics"],
+    "icon": "✉️"
+  },
+  {
+    "id": 6,
+    "name": "AI Content Generator",
+    "description": "Generate blogs, ads, and captions instantly.",
+    "price": 35,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "info",
+    "features": ["Blog writing", "Ad copy", "SEO content"],
+    "icon": "🤖"
+  }
+]
