@@ -8,11 +8,21 @@ import Steps from './components/Steps';
 import Pricing from './components/Pricing';
 import Dubble from './components/Dubble';
 import Footer from './components/Footer';
+import Cart from './components/Cart';
+
 
 function App() {
   const [cart, setCart] = useState([]);
   const [products, setProducts] = useState([]);
   const [showCart, setShowCart] = useState(false);
+  const handleRemove = (id) => {
+    const remaining = cart.filter(item => item.id !== id);
+    setCart(remaining);
+  };
+
+  const handleCheckout = () => {
+    setCart([]);
+  };
 
   // ✅ Load products
   useEffect(() => {
@@ -47,8 +57,13 @@ function App() {
         setShowCart={setShowCart}
       />
 
-      {/* Products */}
-      {!showCart && (
+      {showCart ? (
+        <Cart
+          cart={cart}
+          handleRemove={handleRemove}
+          handleCheckout={handleCheckout}
+        />
+      ) : (
         <Products
           products={products}
           handleAddToCart={handleAddToCart}
