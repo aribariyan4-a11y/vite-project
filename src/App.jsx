@@ -4,6 +4,10 @@ import Banner from './components/Banner';
 import Stats from './components/Stats';
 import ProductsSection from './components/ProductsSection';
 import Products from './components/Products';
+import Steps from './components/Steps';
+import Pricing from './components/Pricing';
+import Dubble from './components/Dubble';
+import Footer from './components/Footer';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -23,6 +27,10 @@ function App() {
       <Stats />
       <ProductsSection cart={cart} showCart={showCart} setShowCart={setShowCart} />
       {!showCart && <Products products={products} />}
+      <Steps />
+      <Pricing />
+      <Dubble />
+      <Footer />
     </div>
   );
 }
