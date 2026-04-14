@@ -1,5 +1,6 @@
 import bannerImg from '../assets/banner.png';
 import playIcon from '../assets/play.png';
+import { FaDotCircle } from "react-icons/fa";
 
 const Banner = () => {
     return (
@@ -8,8 +9,8 @@ const Banner = () => {
 
                 <div className="max-w-xl">
 
-                    <p className="bg-blue-100 text-purple-600 inline-block px-4 py-1 rounded-full text-sm mb-4">
-                         New: AI-Powered Tools Available
+                    <p className="bg-blue-100 text-purple-600 px-4 py-2 rounded-full text-sm mb-4 flex items-center gap-2">
+                        <FaDotCircle /> New: AI-Powered Tools Available
                     </p>
 
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">

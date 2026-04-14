@@ -1,3 +1,4 @@
+import { FaShoppingCart } from "react-icons/fa";
 const Cart = ({ cart, handleRemove, handleCheckout }) => {
     return (
         <div className="max-w-4xl mx-auto mt-10 px-4">
@@ -7,7 +8,8 @@ const Cart = ({ cart, handleRemove, handleCheckout }) => {
             </h2>
 
             {cart.length === 0 ? (
-                <p className="text-gray-500">Your cart is empty</p>
+                <p className="text-gray-500 text-center">Your cart is empty <FaShoppingCart size={100} className="mx-auto mt-4" /></p>
+                
             ) : (
                 <>
                     <div className="space-y-4">
@@ -27,7 +29,7 @@ const Cart = ({ cart, handleRemove, handleCheckout }) => {
 
                                 <button
                                     onClick={() => handleRemove(item.id)}
-                                    className="btn btn-sm bg-red-500 text-white"
+                                    className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white"
                                 >
                                     Remove
                                 </button>
@@ -38,7 +40,7 @@ const Cart = ({ cart, handleRemove, handleCheckout }) => {
 
                     <button
                         onClick={handleCheckout}
-                        className="btn mt-6 w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white"
+                        className="btn mt-6 w-full rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white"
                     >
                         Proceed to Checkout
                     </button>

@@ -12,21 +12,21 @@ const Footer = () => {
                 padding: "60px 80px 0",
             }}
         >
-            {/* ── Top Grid ── */}
+
             <div
                 style={{
                     display: "grid",
-                    gridTemplateColumns: "2fr 1fr 1fr 1fr 1.2fr",
+                    gridTemplateColumns: '2fr 1fr 1fr 1fr 1.2fr',
                     gap: "40px",
                     maxWidth: "1200px",
                     margin: "0 auto",
                 }}
             >
-                {/* Brand */}
+
                 <div>
                     <h2
                         style={{
-                            fontSize: "1.7rem",
+                            fontSize: "28px",
                             fontWeight: 800,
                             marginBottom: "14px",
                             letterSpacing: "-0.5px",
@@ -38,7 +38,7 @@ const Footer = () => {
                     <p
                         style={{
                             color: "rgba(255,255,255,0.45)",
-                            fontSize: "0.88rem",
+                            fontSize: "12px",
                             lineHeight: 1.75,
                             maxWidth: "250px",
                         }}
@@ -48,21 +48,21 @@ const Footer = () => {
                     </p>
                 </div>
 
-                {/* Product */}
+
                 <LinkColumn title="Product" links={productLinks} />
 
-                {/* Company */}
+
                 <LinkColumn title="Company" links={companyLinks} />
 
-                {/* Resources */}
+
                 <LinkColumn title="Resources" links={resourceLinks} />
 
-                {/* Social Links */}
+
                 <div>
                     <p
                         style={{
                             fontWeight: 600,
-                            fontSize: "0.95rem",
+                            fontSize: "15px",
                             marginBottom: "20px",
                             color: "#fff",
                         }}
@@ -77,7 +77,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* ── Divider ── */}
+
             <div
                 style={{
                     maxWidth: "1200px",
@@ -87,7 +87,7 @@ const Footer = () => {
                 }}
             />
 
-            {/* ── Bottom Bar ── */}
+
             <div
                 style={{
                     maxWidth: "1200px",
@@ -100,7 +100,7 @@ const Footer = () => {
                     gap: "12px",
                 }}
             >
-                <p style={{ color: "rgba(255,255,255,0.35)", fontSize: "0.82rem" }}>
+                <p style={{ color: "rgba(255,255,255,0.35)", fontSize: "16px" }}>
                     © 2026 Digitools. All rights reserved.
                 </p>
                 <div style={{ display: "flex", gap: "28px" }}>
@@ -110,7 +110,7 @@ const Footer = () => {
                             href="#"
                             style={{
                                 color: "rgba(255,255,255,0.35)",
-                                fontSize: "0.82rem",
+                                fontSize: "14px",
                                 textDecoration: "none",
                                 transition: "color 0.2s",
                             }}
@@ -128,13 +128,13 @@ const Footer = () => {
     );
 };
 
-/* ── Link Column ── */
+
 const LinkColumn = ({ title, links }) => (
     <div>
         <p
             style={{
                 fontWeight: 600,
-                fontSize: "0.95rem",
+                fontSize: "15px",
                 marginBottom: "20px",
                 color: "#fff",
             }}
@@ -158,7 +158,7 @@ const LinkColumn = ({ title, links }) => (
                         style={{
                             color: "rgba(255,255,255,0.45)",
                             textDecoration: "none",
-                            fontSize: "0.88rem",
+                            fontSize: "14px",
                             transition: "color 0.2s",
                         }}
                         onMouseEnter={(e) => (e.currentTarget.style.color = "#fff")}
@@ -174,7 +174,6 @@ const LinkColumn = ({ title, links }) => (
     </div>
 );
 
-/* ── Social Icon Button ── */
 const SocialIcon = ({ children }) => (
     <div
         style={{
@@ -201,7 +200,6 @@ const SocialIcon = ({ children }) => (
     </div>
 );
 
-/* ── SVG Icons ── */
 const YoutubeSVG = () => (
     <svg width="17" height="17" viewBox="0 0 24 24" fill="white">
         <path d="M23.5 6.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C17.5 2.7 12 2.7 12 2.7s-5.5 0-8.3.2c-.4.1-1.4.1-2.3 1C.7 4.6.5 6.2.5 6.2S.3 8 .3 9.9v1.8c0 1.8.2 3.7.2 3.7s.2 1.6.9 2.3c.9.9 2 .9 2.5 1C5.5 19 12 19 12 19s5.5 0 8.3-.3c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.8.2-3.7V9.9c0-1.8-.2-3.7-.2-3.7zM9.7 14.6V8.1l6.3 3.3-6.3 3.2z" />
