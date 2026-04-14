@@ -1,6 +1,6 @@
 import { FaHandPointDown } from "react-icons/fa";
 const ProductCard = ({ product, handleAddToCart, cart }) => {
-    const { name, description, price, period, features, icon, tag } = product;
+    const { name, description, price, period, features, icon,  tag } = product;
 
     const isAdded = cart.some(item => item.id === product.id);
 

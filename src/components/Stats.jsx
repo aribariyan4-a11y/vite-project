@@ -5,7 +5,7 @@ const Stats = () => {
 
                 <div className="px-6">
                     <h2 className="text-3xl font-bold">50K+</h2>
-                    <p>Active Users</p>
+                    <p>Activ Users</p>
                 </div>
 
                 <div className="hidden md:block h-28 border-l border-white opacity-50"></div>
